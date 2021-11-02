@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>E-Library</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="{% static 'indexstyle.css' %}" rel="stylesheet">
+  <link href="{% static 'animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'aos.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'swiper-bundle.min.css' %}" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+      <h1 class="logo me-auto me-lg-0" style="text-decoration: none;"><a href="">E - Library</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Instructions</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a href="/admin_login/" class="book-a-table-btn scrollto d-none d-lg-flex" style="margin-right:-10%">Admin</a>
+      <a href="/student_login/" class="book-a-table-btn scrollto d-none d-lg-flex" style="margin-right:-10%">Student</a>
+      <a href="/student_registration/" class="book-a-table-btn scrollto d-none d-lg-flex">Register</a>
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>E - Library</span></h1>
+          <h2>Come Learn With us!</h2>
+
+          <div class="btns">
+            <a href="/admin_login/" class="btn-menu animated fadeInUp scrollto">Admin</a>
+            <a href="/student_login/" class="btn-book animated fadeInUp scrollto">Student</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img
+                src="https://media.istockphoto.com/photos/bookshelf-of-irish-legal-books-picture-id1097811822?k=20&m=1097811822&s=612x612&w=0&h=EL3nWAVcgI4T5RUlm_TaERvi1TIeruAzCLp3QZiDJOk="
+                alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>E - Library</h3>
+            <p class="fst-italic">
+              – user-focused, innovative, and excellence driven.
+            </p>
+            <ul>
+              <li><i class="fa fa-check-square-o" ></i> Manages knowledge, both in print and digital formats.</li>
+              <li><i class="fa fa-check-square-o"></i> Ensures seamless discovery and access to these scholarly resources.
+              </li>
+              <li><i class="fa fa-check-square-o"></i> Provides faculty, students, and staff with professional support to
+                find,
+                evaluate, manage, and use such resources.</li>
+            </ul>
+            <p>
+              The library extensively uses social media for improved communication and interaction and has
+              created a blog to post current and interesting information and news items. Users can also follow
+              us on the facebook and twitter. This is the reflection of library’s continuous engagement with
+              its users as a valuable partner in their learning and research.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Instructions ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>E - Library</h2>
+          <p>Library Instructions</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <p>Monday through Friday 09:00 – 23:00 hrs
+                Saturdays / Sundays / Holidays 10:00 – 17:00 hrs
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <p>The issued book need to be returned within 14 days or else a fine of Rs 5
+                will be charged per day till the book is returned.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <p>The library remains open on all days of the year except on Republic Day and Independence Day</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="fa fa-map-marker"></i>
+                <h4>Location:</h4>
+                <p>Tamil nadu</p>
+              </div>
+              <div class="open-hours">
+                <i class="fa fa-clock-o"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Friday:<br>
+                  09:00 – 23:00<br>
+                  Saturday-Sunday<br>
+                  10:00 – 17:00
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="fa fa-envelope"></i>
+                <h4>Email:</h4>
+                <p>monisaselvakumar@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="fa fa-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9600863293</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"  style="text-decoration: none;">
+    <i class="fa fa-level-up" aria-hidden="false"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'aos.js' %}"></script>
+  <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'glightbox.min.js' %}"></script>
+  <script src="{% static 'isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'validate.js' %}"></script>
+  <script src="{% static 'swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'main1.js' %}"></script>
+
+</body>
+
+</html>

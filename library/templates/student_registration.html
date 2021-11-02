@@ -1,0 +1,201 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}Student Registration{% endblock %}
+{% block css %}
+<style>
+    .border-md {
+        border-width: 2px;
+    }
+    .container{
+        margin-top: 7%;
+    }
+
+    body {
+        min-height: 100vh;
+        background-color: #1a1814;
+    }
+
+    .form-control:not(select) {
+        padding: 1.5rem 0.5rem;
+    }
+
+    select.form-control {
+        height: 45px;
+        padding-left: 0.5rem;
+    }
+
+    .input::placeholder {
+        color: #ccc;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+    }
+</style>
+{% endblock %}
+{% block body %}
+<div class="container" >
+    <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+            <img src="https://images.unsplash.com/photo-1549633030-89d0743bad01?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHllbGxvdyUyMHBlcnNvbnxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="" class="img-fluid mb-3 d-none d-md-block">
+            <h1 align="center" style="color: whitesmoke;">Create an Account</h1>
+        </div>
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-6 ml-auto">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row">
+
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="first_name"
+                            placeholder="First Name" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="last_name"
+                            placeholder="Last Name" required style="background-color: whitesmoke;">
+                    </div>
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-user text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="username"
+                            placeholder="Username" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-envelope text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control border-left-0 border-md" name="email"
+                            placeholder="Email Address" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-phone-square text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="number" class="form-control border-left-0 border-md" name="phone"
+                            placeholder="Mobile Number" required style="background-color: whitesmoke;">
+                    </div>
+
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-black-tie text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="branch"
+                            placeholder="Branch Name" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-black-tie text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="classroom"
+                            placeholder="Class Name" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-black-tie text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control border-left-0 border-md" name="roll_no"
+                            placeholder="Roll Number" required style="background-color: whitesmoke;">
+                    </div>
+
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text px-4 border-md border-right-0"
+                                style="background-color: whitesmoke;">
+                                <i class="fa fa-camera text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="file" class="form-control border-left-0 border-md" name="image" required style="color: gray;
+                        font-weight: bold;
+                        font-size: 0.9rem; background-color: whitesmoke;">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-lock text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control bg-white border-left-0 border-md" name="password"
+                            placeholder="Password" required>
+                    </div>
+
+                    <!-- Password Confirmation -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-white px-4 border-md border-right-0">
+                                <i class="fa fa-lock text-muted"></i>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control bg-white border-left-0 border-md"
+                            name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary mt-4" style="border: none; color: black; background-color: #cda45e; text-transform: uppercase; 
+                        font-weight: bold; height: 40px;">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+    $(function () {
+        $('input, select').on('focus', function () {
+            $(this).parent().find('.input-group-text').css('border-color', '#80bdff');
+        });
+        $('input, select').on('blur', function () {
+            $(this).parent().find('.input-group-text').css('border-color', '#ced4da');
+        });
+    });
+
+</script>
+<script>
+    {% if alert %}
+    alert("Registration Successful.")
+    document.location = "/student_login"
+    {% endif %}
+</script>
+{% endblock %}

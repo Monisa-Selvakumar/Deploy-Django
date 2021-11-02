@@ -1,0 +1,135 @@
+{% extends 'student_navbar.html' %}
+
+{% block title %} Profile {% endblock %}
+
+{% block css %}
+{% endblock %}
+{% block body %}
+<!-- <div class="container profile" style="margin-top: 7%;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile-img">
+                <img src="{{user.student.image.url}}" alt="" width="280px" height="280px">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="profile-tab">
+                <div class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>ID :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.id}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Username :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Full Name :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.get_full_name}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Email :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.email}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Phone Number :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.student.phone}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Branch :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.student.branch}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Class :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.student.classroom}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Roll Number :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <p>{{user.student.roll_no}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div> -->
+<div class="container" style="margin-left: 10%;">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="panel">
+                <div class="panel-body table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>{{user.get_full_name}}</th>
+                            </tr>
+                            <tr>
+                                <th>Username</th>
+                                <th>{{user}}</th>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>{{user.id}}</th>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <th>{{user.email}}</th>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <th>{{user.student.phone}}</th>
+                            </tr>
+                            <tr>
+                                <th>Branch</th>
+                                <th>{{user.student.branch}}</th>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <th>{{user.student.classroom}}</th>
+                            </tr>
+                            <tr>
+                                <th>Roll Number</th>
+                                <th>{{user.student.roll_no}}</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

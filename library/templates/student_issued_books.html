@@ -1,0 +1,51 @@
+{% extends 'student_navbar.html' %}
+{% load static %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="panel" style="width: 120%;">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                            <h4 class="title">Issued Books</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>ID</th>
+                                <th>Student Name</th>
+                                <th>Book Name</th>
+                                <th>Author</th>
+                                <th>Issued Date</th>
+                                <th>Expiry Date</th>
+                                <th>Due Fine</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in li1 %}
+                            <tr>
+                                <td>{{forloop.counter}}.</td>
+                                <td>{{i.0}}</td>
+                                <td>{{i.1}}</td>
+                                <td>{{i.2}}</td>
+                                <td>{{i.3}}</td>
+                                {% endfor %}
+                                {% for i in li2 %}
+                                <td>{{i.0}}</td>
+                                <td>{{i.1}}</td>
+                                <td>₹ {{i.2}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
